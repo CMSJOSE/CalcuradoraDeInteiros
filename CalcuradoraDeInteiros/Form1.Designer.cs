@@ -28,8 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            Resultado = new Label();
-            textBox1 = new TextBox();
+            Display = new TextBox();
             btn_0 = new Button();
             button2 = new Button();
             button4 = new Button();
@@ -47,22 +46,13 @@
             button16 = new Button();
             SuspendLayout();
             // 
-            // Resultado
+            // Display
             // 
-            Resultado.AutoSize = true;
-            Resultado.Location = new Point(143, 157);
-            Resultado.Name = "Resultado";
-            Resultado.Size = new Size(90, 25);
-            Resultado.TabIndex = 2;
-            Resultado.Text = "Resultado";
-            Resultado.Click += Resultado_Click;
-            // 
-            // textBox1
-            // 
-            textBox1.Location = new Point(12, 88);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(221, 31);
-            textBox1.TabIndex = 3;
+            Display.AutoCompleteMode = AutoCompleteMode.SuggestAppend;
+            Display.Location = new Point(12, 88);
+            Display.Name = "Display";
+            Display.Size = new Size(221, 31);
+            Display.TabIndex = 3;
             // 
             // btn_0
             // 
@@ -92,6 +82,7 @@
             button4.TabIndex = 8;
             button4.Text = "8";
             button4.UseVisualStyleBackColor = true;
+            button4.Click += button4_Click;
             // 
             // button5
             // 
@@ -111,6 +102,7 @@
             button6.TabIndex = 10;
             button6.Text = "6";
             button6.UseVisualStyleBackColor = true;
+            button6.Click += button6_Click;
             // 
             // button7
             // 
@@ -120,6 +112,7 @@
             button7.TabIndex = 11;
             button7.Text = "4";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // button8
             // 
@@ -129,6 +122,7 @@
             button8.TabIndex = 12;
             button8.Text = "5";
             button8.UseVisualStyleBackColor = true;
+            button8.Click += button8_Click;
             // 
             // button9
             // 
@@ -138,6 +132,7 @@
             button9.TabIndex = 13;
             button9.Text = "7";
             button9.UseVisualStyleBackColor = true;
+            button9.Click += button9_Click;
             // 
             // button10
             // 
@@ -147,6 +142,7 @@
             button10.TabIndex = 14;
             button10.Text = "9";
             button10.UseVisualStyleBackColor = true;
+            button10.Click += button10_Click;
             // 
             // button11
             // 
@@ -166,6 +162,7 @@
             button12.TabIndex = 16;
             button12.Text = "=";
             button12.UseVisualStyleBackColor = true;
+            button12.Click += button12_Click;
             // 
             // button13
             // 
@@ -228,8 +225,7 @@
             Controls.Add(button4);
             Controls.Add(button2);
             Controls.Add(btn_0);
-            Controls.Add(textBox1);
-            Controls.Add(Resultado);
+            Controls.Add(Display);
             Name = "Form1";
             Text = "Form1";
             ResumeLayout(false);
@@ -237,8 +233,7 @@
         }
 
         #endregion
-        private Label Resultado;
-        private TextBox textBox1;
+        private TextBox Display;
         private Button btn_0;
         private Button button2;
         private Button button4;
